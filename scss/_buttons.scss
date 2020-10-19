@@ -1,0 +1,46 @@
+%btn {
+    display:inline-block;
+    border-radius: 30px;
+    padding: 20px 30px;
+    width:15em;
+    margin:3px;
+    border:0;
+    color:#fff;
+    &:hover {
+        background-color: $orange-red-color;
+        cursor: pointer;
+    }
+    font-family: Lato-bold;
+    font-size: 15px;
+}
+.btn-primary{
+    @extend %btn;
+    background-color: $orange-color;
+}
+%popular{
+    background-color: $normal-green-color;
+    padding:8px;
+    color:#fff;
+    display:inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.popular-green {
+    @extend %popular;
+}
+%arrow{
+    width:80px;
+    border:0;
+    background-color: #f4f4f4;
+    a:hover{
+        cursor: pointer;
+    }
+}
+.btn-arrow{
+    @extend %arrow;
+}
+.btn-arrow1 , .btn-arrow2{
+    @extend %arrow;
+}

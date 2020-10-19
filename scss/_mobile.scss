@@ -1,0 +1,252 @@
+@media screen and (max-width: 600px){
+    
+    .showcase .container {
+        .showcase-content {
+            display: block;
+            position: relative;
+              .left-content {
+                position:absolute;
+                width: 100%;
+                left:1rem;
+                z-index: 1;
+                img {
+                    display: none;
+                }
+                h1{
+                    transform: translate(0px,0px);
+                    width:70%;
+                    font-size: 4rem;
+                }
+                p{
+                    transform: translate(0px,0px);
+                    width:70%;
+                    padding-top:2.4rem;
+                }
+                .btn-primary{
+                    transform: translate(0,3rem);
+                   
+                }
+            }
+            .right-content {
+                position: relative;
+                
+                img{
+                    padding:0;
+                    margin-top:10rem;
+                    width:300px;
+                    height:400px;
+                    position:absolute;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        width:100%;
+        padding:0;
+        margin:0;
+        .title {
+            margin-top: 3rem;
+        }
+        nav {
+            width:100%;
+            a{
+                font-size: 1.5rem;
+            }
+        }
+        #breakfast-recipes {
+            #img {
+                display:none;
+            }
+            #recipes {
+                width:100%;
+                padding-left:1rem;
+                padding-right:1rem;
+                h1{
+                    text-align: center;
+                }
+                .btn-primary {
+                    margin:auto;
+                    display:block;
+                    margin-top: 3rem;
+                }
+            }
+            
+        }
+        #slider, #latest-recipes, #popular-recipes, .partners, .newsletter {
+            margin-left:1rem;
+            margin-right:1rem;
+        }
+        #slider {
+            .slider-div{
+                .btn-arrow1{
+                    margin-left:20%;
+
+                    a{
+                        position:relative;
+                        img{
+                            position:absolute;
+                            right:0;
+                        }
+                    }
+                }
+                .btn-arrow2{
+                    margin-left:30%;
+                    a{
+                        position:relative;
+                        img{
+                            position:absolute;
+                            left:0;
+                        }
+                    }
+                }
+            }
+        }
+        #latest-recipes {
+            h1 {
+                font-size: 2rem;
+            }
+            .articles {
+                .recipe {
+                    height:300px;
+                    .top {
+                        height:50%;
+                        img {
+                            width:100%;
+                            height:100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .bottom{
+                        height:50%;
+                        padding:0.5em;
+                    }
+                    
+                }
+                .check-other-recipe{
+                    h4 {
+                        transform: translate(0em,14em);
+                        padding-left:1.7em;
+                        font-size: 0.8em;
+                    }
+                    h2{
+                        transform: translate(0em,8em);
+                        font-size: 1.5em;
+                        width:100%;
+                        padding-left:1em;
+                    }
+                }
+            }
+        }
+        #popular-recipes {
+            #details-recipe {
+                z-index: 2;
+                #ingridients{
+                    z-index: 2;
+                }
+            }
+            
+        }
+        .partners {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            img {
+                height:40px;
+                width:100%;
+                padding-left:20%;
+                padding-right:20%;
+                margin-top:5%;
+            }
+            .special2,.special3 {
+                padding-left:30%;
+                padding-right:30%;
+            }
+            .special {
+                grid-column:3/1;
+                width:100%;
+                padding-left:20%;
+                padding-right:20%;
+                height:40px;
+            }
+        }
+        .newsletter {
+            width:95%;
+            height:300px;
+            h3 {
+                width:100%;
+                text-align:center;
+            }
+            form{
+                width:90%;
+                display:flex;
+                flex-direction:column;
+                #email {
+                    width:100%;
+                    margin-left:5%;
+                }
+                #secondary{
+                    display:block;
+                    width:80%;
+                    margin:auto;
+                    font-size: 0.7em;
+
+                }
+                
+                .btn-primary{
+                    width:60%;
+                    margin-left:23%;
+                    margin-top:13%;
+                }
+            }
+            #primary{
+                display:none;
+            }
+        }
+    }
+    .footer {
+        height:800px;
+        .container {
+            background-color: $darker-green-color;
+            flex-direction: column;
+            .contact {
+                width:80%;
+                margin:auto;
+                margin-top:8rem;
+                img {
+                    display:block;
+                    margin:auto;
+                    width:280px;
+                }
+                .p-special {
+                    padding : 3rem 0;
+                    text-align:center;
+                    font-size: 1em;
+                }
+                .p-basic {
+                    text-align:center;
+                }
+                
+            }
+            .footer-recipes,.useful-links {
+                margin:auto;
+                margin-top:5em;
+                h3{
+                    text-align: center;
+                    font-size: 2em;
+                }
+                ul {
+                    text-align: center;
+                    font-size: 1.2em;
+                }
+            }
+           
+        }
+        .copyright{
+            text-align: center;
+            padding: 2em 3em;
+            font-size: 1em;
+        }
+        
+    }
+
+}
